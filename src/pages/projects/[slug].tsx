@@ -51,10 +51,10 @@ export default function Project({ project }: ProjectProps){
 
                         <div className="links">
                             { project.data.link_project != "" && 
-                            <a href={project.data.link_project} target="_blank" rel="noopener noreferrer">{ router.locale == 'pt-br'? 'Veja ao vivo' : 'See it live' }</a>
+                            <a href={PrismicDOM.RichText.asText(project.data.link_project)} target="_blank" rel="noopener noreferrer">{ router.locale == 'pt-br'? 'Veja ao vivo' : 'See it live' }</a>
                             }
                             { project.data.link_github != "" && 
-                            <a href={project.data.link_github} target="_blank" rel="noopener noreferrer">{ router.locale == 'pt-br'? 'Veja o código' : 'See the code' }</a>
+                            <a href={PrismicDOM.RichText.asText(project.data.link_github)} target="_blank" rel="noopener noreferrer">{ router.locale == 'pt-br'? 'Veja o código' : 'See the code' }</a>
                             }
                         </div>
                         <div className="links">
