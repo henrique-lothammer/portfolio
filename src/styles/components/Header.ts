@@ -50,6 +50,15 @@ export const Language = styled.div`
             color: #191a1d;
         }
     }
+
+    @media (max-width: 425px) {
+        button {
+            font-size: 13px;
+            min-width: 38px;
+            height: 38px;
+            margin-left:8px;
+        }
+    }
 `;
 
 export const Introduction = styled.div`

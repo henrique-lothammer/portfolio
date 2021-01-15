@@ -17,17 +17,14 @@ export default createGlobalStyle`
     }
 
     body{
-        background: #121214;
-        background: #191a1d;
+        background: #f5f5f5;
         color: #FFF;
         font-family: Roboto, Arial, Helvetica, sans-serif;
         font-size: 1.6rem;
     }
 
     .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px 1fr 150px;
+        position: relative;
         min-height: 100vh;
     }
 
@@ -52,16 +49,18 @@ export default createGlobalStyle`
 
     main{
         background: #f5f5f5;
-        padding: 20px 20px;
+        padding: 20px 20px 100px;
         color: #191a1d;
     }
 
     footer{
         background: #191a1d;
         padding: 10px 20px;
-        height: 100%;
+        height: 100px;
         overflow: hidden;
-        position: relative;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
 
         &::after{
             content: '';
@@ -69,7 +68,7 @@ export default createGlobalStyle`
             height: 40px;
             background: #f5f5f5;
             position: absolute;
-            top: -20px;
+            top: -30px;
             left: -25%;
             transform: rotate(-1deg);
         }
@@ -109,13 +108,19 @@ export default createGlobalStyle`
 
     @media (max-width: 768px) {
         html {
-            font-size: 50%;
+            font-size: 55%;
+        }
+    }
+
+    @media (max-width: 550px) {
+        html {
+            font-size: 45%;
         }
     }
 
     @media (max-width: 425px) {
         html {
-            font-size: 40%;
+            font-size: 30%;
         }
     }
 

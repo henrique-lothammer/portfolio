@@ -12,4 +12,13 @@ export const SocialLinks = styled.ul`
             height: 50px;
         }
     }
+
+    @media (max-width: 425px) {
+        li{
+            svg{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 `; 

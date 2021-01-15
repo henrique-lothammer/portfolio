@@ -57,4 +57,13 @@ export const Projects = styled.ul`
             width: 100%;
         }
     }
+
+    @media (max-width: 425px) {
+        li .content{
+            flex-direction: column;
+            .img{
+                max-height: 200px;
+            }
+        }
+    }
 `;

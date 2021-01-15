@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProjectDescription = styled.div`
     padding: 20px 0 30px;
-    line-height: 2.6rem;
+    line-height: 3.4rem;
     font-size: 1.6rem;
 
     display: flex;
@@ -43,6 +43,15 @@ export const ProjectDescription = styled.div`
                 background: #fff;
                 color: #191a1d;
             }
+        }
+    }
+
+    @media (max-width: 425px) {
+        font-size: 2.2rem;
+        line-height: 4.4rem;
+
+        .links a,div{
+            font-size: 2.8rem;
         }
     }
 `;
