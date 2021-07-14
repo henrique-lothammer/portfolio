@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     *{
@@ -21,6 +21,7 @@ export default createGlobalStyle`
         color: #FFF;
         font-family: Roboto, Arial, Helvetica, sans-serif;
         font-size: 1.6rem;
+        min-width:360px;
     }
 
     .grid{
@@ -55,12 +56,13 @@ export default createGlobalStyle`
 
     footer{
         background: #191a1d;
-        padding: 10px 20px;
-        height: 100px;
+        padding: 6px 20px;
+        height: 120px;
         overflow: hidden;
         position: absolute;
         width: 100%;
         bottom: 0;
+        font-size:1.8rem;
 
         &::after{
             content: '';
@@ -96,13 +98,13 @@ export default createGlobalStyle`
     }
 
     h1{
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-bottom: 30px;
         display: inline-block;
     }
 
     h2{
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         margin-bottom: 20px;
     }
 
@@ -120,9 +122,8 @@ export default createGlobalStyle`
 
     @media (max-width: 425px) {
         html {
-            font-size: 30%;
+            font-size: 35%;
         }
     }
 
-`; 
-
+`;
